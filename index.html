@@ -51,7 +51,6 @@
   <main class="main-index">
     <section class="hero">
       <h1 class="visuali-hidden">Седона</h1>
-      <img class="hero" src="images/index-background-sedona.jpg" width="1200" height="485">
       <img class="hero-welcome" src="images/welcome-sedona.svg" width="458" height="352" alt="welcome">
       <img class="hero-divider" src="images/divider.svg" width="1200" height="57">
     </section>
@@ -64,20 +63,22 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages-list">
-
+      <div class="advantages-list">
         <div class="index-text">
-          <li class="advantages-item">
+          <ul class="advantages-item">
             <h3 class="advantages-title">Настоящий<br>городок</h3>
             <p class="advantages-text">— №1 —</p>
             <p class="advantages-text">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
-          </li>
-          <li class="advantages-item">
-            <img class="advantages" src="images/photo-city.jpg" width="800" height="384" alt="Улицы Седоны">
-          </li>
-        </div>
 
-        <div class="index-columns">
+            <li class="advantages-item">
+              <img class="advantages" src="images/photo-city.jpg" width="800" height="384" alt="Улицы Седоны">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="index-columns">
+        <ul class="advantages-list">
 
           <li class="advantages-item-house">
             <img class="advantages" src="images/house-icon.svg" width="77" height="72" alt="Жильё">
@@ -99,9 +100,11 @@
               но и настоящего местного<br> производства!
             </p>
           </li>
-        </div>
+        </ul>
+      </div>
 
-        <div class="index-text">
+      <div class="index-text">
+        <ul class="advantages-list">
           <li class="advantages-item">
             <img class="advantages" src="images/bridge.jpg" width="800" height="384" alt="Мост">
           </li>
@@ -111,11 +114,12 @@
             <p class="advantages-text">— №2 —</p>
             <p class="advantages-text">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
           </li>
-        </div>
+        </ul>
+      </div>
 
 
-        <div class="index-columns">
-
+      <div class="index-columns">
+        <ul class="advantages-list">
           <li class="advantages-item-area">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-text">— №3 —</p>
@@ -133,9 +137,10 @@
             <p class="advantages-text">— №5 —</p>
             <p class="advantages-text">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
-        </div>
+        </ul>
+      </div>
 
-      </ul>
+
     </section>
     <section class="search">
       <h2 class="search-title">Заинтересовались?</h2>
@@ -144,7 +149,7 @@
     </section>
 
     <section class="subscribe">
-      <img class="subscribe-background" src="images/subscribe-background.jpg" width="1200" height="411">
+      
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
