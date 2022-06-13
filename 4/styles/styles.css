@@ -215,14 +215,25 @@
   flex-basis: 100%;
 }
 
+.advantages-item-view {
+  width: 400px;
+  height: 384px;
+  background-color: #FFFFFF;
+
+}
+
 .advantages-item-picture {
   width: 800px;
 
 }
 
 .advantages-item-brige {
+  padding-top: 92px;
   background-color: #82B3D3
+
+
 }
+
 
 .index-columns {
   display: flex;
@@ -233,15 +244,18 @@
 }
 
 .advantages-item-city {
+  padding-top: 92px;
   background-color: #82B3D3
 }
 
 .advantages-item-light {
+
   background-color: rgba(131, 179, 211, 0.12);
 
 }
 
 .advantages-item-dark {
+
   background-color: rgba(131, 179, 211, 0.2);
 
 }
@@ -254,6 +268,7 @@
 }
 
 .info {
+  padding-top: 63px;
   font-family: "ptsans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -272,6 +287,7 @@
 
 .search {
 
+  padding-top: 91px;
   text-align: center;
   color: #333333;
   background-color: #FFFFFF;
@@ -290,6 +306,7 @@
 }
 
 .subscribe {
+  padding-top: 91px;
   display: flex;
   flex-direction: column;
   font-family: "ptsans", sans-serif;
@@ -311,6 +328,7 @@
 }
 
 .page-footer {
+  padding-top: 45px;
   background-color: #FFFFFF;
   background-repeat: repeat;
 }
