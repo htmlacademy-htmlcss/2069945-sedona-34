@@ -65,6 +65,7 @@
 
 
 .navigation-list {
+
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
@@ -72,6 +73,7 @@
   width: 600px;
   padding: 0;
   list-style-type: none;
+  padding-top: 20px;
 }
 
 .navigation-logo {
@@ -85,6 +87,8 @@
   max-width: 350px;
   margin-left: 70px;
   list-style-type: none;
+  padding-top: 24px;
+  padding-right: 70px;
 }
 
 .navigation-link {
@@ -344,6 +348,7 @@
 }
 
 .inner-header {
+  padding-top: 35px;
   background-image: url("../images/filter-background.jpg");
   background-color: #7d9fc2;
   background-repeat: cover;
@@ -366,6 +371,9 @@
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   color: #FFFFFF;
   font-size: 16px;
@@ -409,6 +417,7 @@
 }
 
 .sorting-container {
+
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -418,6 +427,8 @@
   background-color: #ffffff;
   font-size: 18px;
   line-height: 21px;
+  padding-top: 58px;
+  margin-bottom: 94px;
 
 }
 
@@ -484,7 +495,9 @@
 
 }
 
-.button-light {
+.button-sorting {
+  width: 48px;
+  height: 48px;
   background-color: #FFFFFF
 }
 
@@ -497,6 +510,7 @@
 }
 
 .button-want {
+
   border: none;
   text-transform: uppercase;
   text-align: center;
@@ -540,12 +554,37 @@
   width: 1056px;
   height: 60px;
   margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
+.pagination-item:not(:last-child) {
+margin-right: 8px;
+
+}
+
+
 .button-pagination {
-  display: flex;
+  display: block;
+  box-sizing: border-box;
+  padding: ;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  weight: 700;
   list-style-type: none;
   margin-right: auto;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+
+}
+
+.pagination-text {
+
+  margin-left: auto;
 }
 
 .pagination-item {
