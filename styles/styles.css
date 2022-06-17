@@ -42,16 +42,18 @@ body {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
 }
 
 .hotel-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+
   min-height: 100%;
   list-style-type: none;
   padding: 0;
@@ -65,15 +67,14 @@ body {
 
 
 .navigation-list {
-
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
-  margin: 0;
-  width: 600px;
+  min-width: 600px;
   padding: 0;
   list-style-type: none;
-  padding-top: 20px;
+
 }
 
 .navigation-logo {
@@ -83,14 +84,9 @@ body {
 }
 
 .navigation-user {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 14px;
-  display: flex;
 
-  margin-left: auto;
+  display: flex;
   max-width: 400px;
-
   list-style-type: none;
   padding: 0;
 
@@ -177,16 +173,6 @@ body {
   margin-bottom: 82px;
   margin-top: 51px;
 }
-
-
-.info {
-  width: 1200px;
-  height: 282px;
-  text-transform: uppercase;
-  margin-top: 63px;
-  margin: 290;
-}
-
 
 .advantages-text {
   flex-grow: 1;
@@ -302,17 +288,15 @@ body {
 }
 
 .info {
-  padding-top: 63px;
-  font-family: "ptsans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
+  padding: 60px 100px 90px 100px;
+
   text-align: center;
-  color: #333333;
+
 
 }
 
 .info-title {
-  margin-top: 63px;
+  margin: 0;
   margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
@@ -322,29 +306,21 @@ body {
 }
 
 .search {
-  font-size: 22px;
-  line-height: 26px;
+  padding: 90px 100px;
   text-align: center;
-  color: #333333;
-  background-color: #FFFFFF;
-  Width: 1200px;
-  Height: 417px;
-
 }
 
 .search-title {
-  font-family: "ptsans", sans-serif;
-  margin-top: 91px;
+  margin: 0;
   margin-bottom: 29px;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
   text-transform: uppercase;
 
 }
 
 .subscribe {
-  padding-top: 91px;
+  padding: 60px 90px;
   display: flex;
   flex-direction: column;
   font-family: "ptsans", sans-serif;
@@ -353,13 +329,11 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-repeat: no-repeat;
-  Width: 1200px;
-  Height: 411px;
-
 }
 
 .subscribe-title {
-  margin-top: 94px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 29px;
   font-size: 30px;
   line-height: 36px;
@@ -396,10 +370,11 @@ body {
 }
 
 .inner-header {
+  padding: 35px 70px 70px 70px;
   background-image: url("../images/filter-background.jpg");
   background-color: #7d9fc2;
   background-repeat: cover;
-  margin: 35px 70px 10px 70px;
+
 }
 
 .inner-header-title {
@@ -413,11 +388,7 @@ body {
 
 }
 
-.hotel-bredcrumbs {
-
-  margin-left: 70px;
-
-}
+.hotel-bredcrumbs {}
 
 
 .breadcrumbs {
@@ -431,18 +402,25 @@ body {
   margin-bottom: 40px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link-main {
 
   margin-right: 30px;
   color: inherit;
 
 }
 
+.breadcrumbs-link {
+  color: inherit;
+
+}
+
+.breadcrumbs-transition {
+  margin-right: 10px;
+}
+
 .catalog-filter-container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  margin-left: 70px;
+  justify-content: space-between;
 
 }
 
@@ -454,10 +432,12 @@ body {
 .catalog-filter {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+
   font-family: "ptsans", sans-serif;
-  width: 366px;
+  min-width: 1060px;
+  margin: 0 auto;
   padding: 0;
+  margin: 0;
 
 }
 
@@ -488,8 +468,13 @@ body {
 }
 
 
+.filter-group-infra {
+  margin-right: 70px;
+
+}
+
 .catalog-filter-title {
-  width: 495px;
+
   font-family: "ptsans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -509,24 +494,19 @@ body {
 }
 
 .sorting-container {
-
+  padding: 60px 70px;
   display: flex;
-
+  margin: 0 auto;
   font-family: "ptsans", sans-serif;
   color: #333333;
   background-color: #ffffff;
   font-size: 18px;
   line-height: 21px;
 
-  margin-top: 58px;
-  margin-left: 72px;
-  margin-bottom: 61px;
-
 }
 
 .sorting-container-button {
   display: flex;
-
   margin-left: auto;
 
 }
@@ -609,13 +589,15 @@ body {
 
 
 .button-second-filter {
+
   font-family: "ptsans", sans-serif;
-  width: 160px;
-  height: 48px;
+  min-width: 160px;
+  min-height: 48px;
 
   Weight: 700;
   Size: 16px;
   Line height: 20px;
+  align: center;
 
 }
 
@@ -646,13 +628,9 @@ body {
 }
 
 .button-search {
-  margin-top: 46px;
-  margin-bottom: 94px;
-  border: none;
+
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
   background-color: #756157;
 
 }
