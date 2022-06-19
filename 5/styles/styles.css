@@ -603,6 +603,18 @@ body {
 
 }
 
+.hotel-card-h {
+  width: 140px;
+  margin-right: 20px;
+}
+
+.hotel-card-price {
+  width: 140px;
+
+}
+
+
+
 .button {
   font-family: "ptsans", sans-serif;
   font-size: 16px;
