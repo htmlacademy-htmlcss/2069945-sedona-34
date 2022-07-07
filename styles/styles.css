@@ -122,6 +122,31 @@ body {
 
 }
 
+.gray-badge {
+
+  position: absolute;
+  Width: 53px;
+  Height: 53px;
+  Top: 450px;
+  Left: 874px;
+
+  left: 68.28%;
+  right: 27.58%;
+  top: 13.57%;
+  bottom: 84.83%;
+
+  background-color: #F2F2F2;
+
+
+  border-radius: 50px;
+
+
+  text-align: center;
+  letter-spacing: -0.1em;
+
+  display: flex;
+}
+
 .navigation-link {
 
   display: block;
@@ -456,10 +481,6 @@ body {
 
 }
 
-.subscribe-form .field {
-  Width: 600px;
-
-}
 
 .subscribe-catalog {
   padding-top: 94px;
@@ -1394,15 +1415,24 @@ body {
   margin-left: 0;
 }
 
-
 .field-subscribe {
+
+  background: #F2F2F2;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0;
+  padding: 20px 480px 19px 22px;
+
+
+}
+
+.field-subscribe-catalog {
 
   background-color: #f2f2f2;
   border: none;
   border-radius: 0px 10px 10px 0px;
-  margin-right: 0;
-
-
+  margin: 0;
+  padding: 20px 480px 19px 22px;
 }
 
 .catalog-hotel::after {
@@ -1654,14 +1684,15 @@ body {
 
 
 .field {
-  padding: 20px 200px 19px 22px;
+
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   align-self: center;
-
+  border: none;
+  background-color: #F2F2F2;
 
 
 }
@@ -1707,10 +1738,6 @@ body {
 
 .field-group {
 
-  display: grid;
-
-  grid-template-columns: 100px 80px 80px 80px;
-  gap: 40px;
   margin: 0;
   margin-bottom: 11px;
 
@@ -1718,50 +1745,52 @@ body {
 
 }
 
-.field-text {
-  padding: 15px 270px 15px 15px;
+
+.field-group-item {
+  display: grid;
+  grid-template-columns: 150px 420px;
+  gap: 0px 42px;
+  align-items: center;
+  justify-content: start;
+}
+
+.field-group-text {
+  grid-column: 2;
+  padding: 15px 19px;
+  position: relative;
 
 }
 
-
-
-.field-number {
-  padding: 15px 60px;
-  font-family: 'PT Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+.field-group-item-adult {
   display: flex;
   align-items: center;
-  text-align: center;
-  border: none;
-
+  text-transform: capitalize;
+  width: 288px;
+  min-height: 50px;
+  margin-right: 56px;
 }
 
-.field-group label,
-.field-group input {
 
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
+.field-group-item-children {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  width: 230px;
+  min-height: 50px;
 }
 
-.appointment-form-info {
-  display: none;
-}
 
 
 
 .field-box {
 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+
+  grid-template-columns: 45px 45px 45px;
+
   background: #F2F2F2;
   border-radius: 4px;
-
-  grid-template-columns: 50px 33px 50px;
-  order: 2;
+  padding: 15px;
 
 }
 
@@ -1777,8 +1806,6 @@ body {
 }
 
 .field-button {
-  z-index: 1;
-  display: flex;
   place-items: center;
   place-self: center;
   margin: 0;
@@ -1786,32 +1813,28 @@ body {
   border: 0;
   border-radius: 1px;
   background: transparent;
-  opacity: 0, 3;
-  width: 13px;
-  height: 13px;
+  z-index: 1;
 
-
-  opacity: 0.3;
 }
 
-.field-number {
 
+.field-number {
   box-sizing: border-box;
-  grid-area: 1 / 1 / 2 / 4;
-  appearance: textfield;
-  width: 133px;
-  padding: 20px 20px;
-  text-align: center;
-  border-radius: 4px;
-  border: 0;
-  background-color: #F2F2F2;
-  font-family: 'PT Sans' sans-serif;
+  padding: 15px 60px;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  order: 2;
 }
+
+
+
 
 .field-button::before {
   width: 20px;
@@ -1826,6 +1849,10 @@ body {
 }
 
 .form-label {
+  grid-column: 1;
+  justify-self: start;
+  align-items: center;
+
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1836,14 +1863,36 @@ body {
 
 }
 
-.form-label {
-  grid-column: 1;
+
+.form-label-adult {
+  margin-right: 100px;
+  font-family: 'PT Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-label-children {
+  position: relative;
+  padding: 5px;
+  font-family: 'PT Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.field-group-item-person {
+  display: flex;
+  justify-content: space-between;
 
 }
 
+
 .text-input {
-  grid-column: 2/4;
-  position: relative;
 
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
@@ -1856,7 +1905,7 @@ body {
   align-self: center;
   background: #F2F2F2;
   border-radius: 4px;
-  Width: 420px;
+
 
 }
 
@@ -1897,7 +1946,7 @@ body {
 
 .data-text {
   display: block;
-  grid-column: 2/3;
+  grid-column: 2;
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1911,7 +1960,8 @@ body {
 
 
 .data-text-two {
-  display: block;
+  grid-column: 2;
+  justify-self: start;
 
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
@@ -1925,21 +1975,24 @@ body {
 }
 
 .button-appointment-find {
-  grid-column: 1 / -1;
-  position: absolute;
-  width: 155px;
-  height: 49px;
-  left: 2958px;
-  top: 172px;
 
-  font-family: 'PT Sans';
+  padding: 12px 26px;
+  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 36px;
 
-  display: flex;
-  align-items: center;
+  width: 575px;
+  height: 60px;
+  background: #83B3D3;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 40px;
+  border: none;
 }
 
 .button-appointment-find:disabled {
@@ -1965,11 +2018,6 @@ body {
 }
 
 
-.appointment-form-person {
-  grid-template-columns: 100px 100px;
-  gap: 40px;
-}
-
 
 
 .modal-container {
@@ -1988,49 +2036,50 @@ body {
 
 }
 
-.modal {
-  position: relative;
-  margin: auto;
-  background-color: #ffffff;
-
-}
+.modal {}
 
 .modal-auth {
-  min-width: 715px;
+  width: 715px;
+  height: 561px;
+  position: absolute;
+  left: 22.03%;
+  right: 22.11%;
+  top: 11.95%;
+  bottom: 71.13%;
+  background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  padding: 20px;
+  padding: 70px;
 
 }
 
 
 
 .modal-close-button {
+  position: relative;
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  left: 650px;
+  right: 70px;
+  top: 100px;
+  bottom: ;
+
   width: 13px;
   height: 13px;
-  background-color: #ffffff;
+  background: #ffffff;
   border: none;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  margin-top: 74px;
-  margin-right: 90px;
+
+}
+
+.modal-title {
+  margin-bottom: 63px;
 }
 
 
-.appointment-form-date {}
-
-.appointment-form-person {
-  display: flex;
-  justify-content: space-between;
-
-
-}
 
 .date-button {
   width: 15px;
@@ -2048,39 +2097,45 @@ body {
 
 .tooltip {
 
+  position: absolute;
+  Top: 751px;
+  Left: 750px;
   background: #83B3D3;
-  position: relative;
-  margin: 14px 10px 11px;
+
+  left: 58.59%;
+  right: 39.45%;
+  top: 22.65%;
+  bottom: 76.59%;
   padding: 5px;
   border-radius: 50px;
   cursor: help;
   width: 25px;
   height: 25px;
-
+  position: relative;
+  border: none;
 
 }
 
 .tooltip-text {
   display: block;
   position: absolute;
+
   font-family: 'PT Sans' sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  padding: 20px 22px 23px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 256px;
-  background-color: #242424;
+  color: #ffffff;
+
   text-transform: none;
-  top: calc(100%+15px);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  visibility: hidden;
-  opacity: 1;
-  transition: visibility 0, 3s, opacity 0, 3s;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+
+  width: 256px;
+  min-height: 143px;
+
 
 }
 
@@ -2092,4 +2147,5 @@ body {
   height: 15px;
   background: url("../images/i-tooltip.svg");
   background-repeat: no-repeat;
+
 }
