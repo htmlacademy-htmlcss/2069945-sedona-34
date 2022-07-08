@@ -52,7 +52,7 @@
             </a>
           </li>
 
-          <li class="navigation-user-item">
+          <li class="navigation-user-item-favorite">
             <a class="navigation-user-link" href="#">
 
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17"
@@ -203,7 +203,7 @@
             <div class="range">
 
               <fieldset class="catalog-filter-group-range">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-title filter-title-cost">Стоимость, ₽:</legend>
 
 
                 <div class="range-wrapper-inputs">
@@ -326,10 +326,10 @@
                   </div>
 
 
-                <div class="rating-content">
-                  <span class="rating-button" href="#">Рейтинг: 8,5</span>
+                  <div class="rating-content">
+                    <span class="rating-button" href="#">Рейтинг: 8,5</span>
+                  </div>
                 </div>
-              </div>
             </li>
 
             <li class="hotel-card">
@@ -434,8 +434,19 @@
               <a class="pagination-link pagination-disabled" href="#">10</a>
             </li>
           </ul>
-          <span class="pagination-text">Гостиниц на странице:</span>
-          <span>4</span>
+
+          <div class="quantity-type-hotel">
+            <span class="select-quantity-text">Гостиниц на странице:</span>
+            <div class="select-quantity hotel-type">
+
+              <select class="select-control-quantity" aria-label="Сортировка">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="thre">3</option>
+                <option value="four">4</option>
+              </select>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -447,7 +458,7 @@
 
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field field-subscribe" placeholder="Ваш e-mail" type="email" name="subscribe-email"
+          <input class="field field-subscribe-catalog" placeholder="Ваш e-mail" type="email" name="subscribe-email"
             id="subscribe-email" required>
           <button class="button-second subscribe-button-second" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
@@ -496,20 +507,21 @@
 
   /*modal-container-close*/
 
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button" type="submit">
         <span class="visually-hidden">Закрыть</span>
+        <span class="gray-badge"></span>
       </button>
       <form class="modal-content" action="https://echo.html.academy.ru/" method="post">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
 
         <div class="field-group">
-          <div class="appointment-form-date">
+          <div class="field-group-item">
             <label class="form-label" for="appointment-date">Дата заезда:
             </label>
-            <div class="field-text text-input">
+            <div class="field-group-text text-input">
               <input class="field" type="text" id="appointment-date" name="appointment-date"
                 placeholder="27 апреля 2020">
 
@@ -523,11 +535,11 @@
             <p class="data-text">Мы не можем отправить вас в прошлое.</p>
           </div>
 
-          <div class="field-group appointment-form-date-exit">
 
+          <div class="field-group-item">
             <label class="form-label" for="appointment-date">Дата выезда:</label>
 
-            <div class="field-text text-input">
+            <div class="field-group-text text-input">
               <input class="field" type="text" id="appointment-date" name="appointment-date"
                 placeholder="1 сентября 2021">
 
@@ -536,14 +548,15 @@
                 <span class="visually-hidden">Календарь</span>
               </button>
             </div>
-
             <p class="data-text-two">На эти даты есть свободные номера. Пока есть.</p>
+
           </div>
 
-          <div class="field-group appointment-form-person">
 
-            <div class="adult">
-              <label class="form-label" for="adult">Взрослые:</label>
+          <div class="field-group-item-person">
+
+            <div class="field-group-item-adult">
+              <label class="form-label-adult" for="adult">Взрослые:</label>
 
               <span class="field-box">
                 <button class="field-button minus" type="button">
@@ -559,8 +572,8 @@
             </div>
 
 
-            <div class="children">
-              <label class="form-label" for="children">Дети:</label>
+            <div class="field-group-item-children">
+              <label class="form-label-children" for="children">Дети:</label>
 
               <span class="field-box">
                 <button class="field-button minus" type="button">
@@ -574,21 +587,20 @@
                 </button>
               </span>
 
-
-              <span class="tooltip">
+              <button class="tooltip">
                 <span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей,<br> которые
                   будут с вами,
                   возраст<br> которых от6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
-              </span>
+                </span>
+
             </div>
           </div>
+
 
           <button class="button-appointment-find" type="submit">Найти</button>
         </div>
 
       </form>
-
-
 
     </div>
   </div>
