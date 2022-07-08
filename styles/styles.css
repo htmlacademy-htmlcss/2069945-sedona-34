@@ -193,6 +193,13 @@ body {
 
 }
 
+. {
+margin-right: 32px;
+
+}
+
+
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -371,17 +378,7 @@ body {
 
 }
 
-.hotel-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
-  min-height: 100%;
-  list-style-type: none;
-  padding: 0;
 
-}
 
 .rating {
   display: flex;
@@ -524,7 +521,7 @@ body {
   font-family: "ptsans", sans-serif;
   font-size: 60px;
   line-height: 78px;
-  text-transform: uppercase;
+
   color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -585,12 +582,13 @@ body {
 
 .catalog-filter-container {
   display: flex;
-
+  align-items: center;
 }
 
 .catalog-filter-fieldset {
   display: flex;
-
+margin-right: 170px;
+width: 370px;
 }
 
 .catalog-filter {
@@ -649,12 +647,17 @@ body {
   line-height: 26px;
   color: #FFFFFF;
   text-transform: capitalize;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+
+}
+
+.filter-title-cost {
+margin-bottom: 25px;
 
 }
 
 .catalog-filter-group-range {
-  margin: 0 70px;
+
   width: 288px;
   border: none;
   padding: 0;
@@ -709,6 +712,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   margin-bottom: 32px;
+  padding: 10px 0;
 }
 
 .catalog-filter-label {
@@ -716,8 +720,7 @@ body {
   outline: 2px solid #ffffff;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin-right: 5px;
+
   box-sizing: border-box;
 
   width: 145px;
@@ -796,6 +799,9 @@ body {
   display: inline-block;
   padding: 0;
   margin: 0;
+
+  margin-left: 60px;
+    margin-top: 55px;
 }
 
 
@@ -914,7 +920,8 @@ body {
 }
 
 .sorting-container {
-  padding: 60px 70px;
+  padding: 60px;
+
   display: flex;
   align-items: center;
 
@@ -1121,9 +1128,9 @@ body {
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 70px;
   gap: 18px;
-
+  padding-bottom: 66px;
 }
 
 
@@ -1450,9 +1457,8 @@ body {
 .pagination-container {
   display: flex;
   width: 1056px;
-  padding-bottom: 25px;
+  padding: 25px 70px;
 
-  margin-top: 66px;
 }
 
 .pagination {
@@ -1542,6 +1548,11 @@ body {
 
 .pagination-text {
   margin-left: auto;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 
