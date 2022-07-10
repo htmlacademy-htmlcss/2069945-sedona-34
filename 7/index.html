@@ -50,8 +50,8 @@
         <li class="navigation-user-item">
           <a class="navigation-user-link" href="#">
 
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17"
-              viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip rule="evenodd" d="M9.57663 17C9.27578 17 8.97493 16.9 8.77436 16.6C3.35903 10.5 2.05534 9.1 1.75449
                8.7C1.0525 7.8 0.651367 6.6 0.651367 5.4C0.651367 2.4 3.05818 0 6.16698 0C7.47067 0 8.67407 0.5 9.67691 1.3C10.6797 0.5
                11.9834 0 13.1868 0C16.1954 0 18.7025 2.4 18.7025 5.4C18.7025 6.7 18.201 7.9 17.3988 8.8L10.3789 16.7C10.1783 16.9 9.97776
@@ -139,7 +139,7 @@
               </p>
             </li>
             <li class="advantages-item advantages-item-dark">
-              <img class="advantages advantages-view" src="images/souvenirs.svg" width="76" height="76" alt="Сувениры">
+              <img class="advantages advantages-view-souvenirs" src="images/souvenirs.svg" width="76" height="76" alt="Сувениры">
               <h3 class="advantages-title title-view">Сувениры</h3>
               <p class="advantages-description">Не только китайского,<br>
                 но и настоящего местного<br> производства!
@@ -188,26 +188,29 @@
       </section>
 
 
-      <section class="search">
+      <section class="search-hotel">
         <h2 class="search-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне  </p>
+        <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне </p>
         <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
 
-      <section class="subscribe subscribe-catalog">
+      <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field field-subscribe" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
-            required>
+          <div class="field-subscribe-one">
+            <input class="field-subscribe" placeholder="Ваш e-mail" type="email" name="subscribe-email"
+              id="subscribe-email" required>
             <button class="button-second subscribe-button-second" type="submit">ПОДПИСАТЬСЯ</button>
+          </div>
         </form>
       </section>
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer-index">
     <div class="page-footer-container">
       <section class="footer-social">
 
