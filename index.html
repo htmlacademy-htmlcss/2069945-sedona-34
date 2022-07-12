@@ -211,7 +211,7 @@
 
   <footer class="page-footer-index">
     <div class="page-footer-container">
-      <section class="footer-social">
+      <section class="footer-social-index">
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -248,6 +248,107 @@
       </section>
     </div>
   </footer>
+
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button" type="submit">
+        <span class="visually-hidden">Закрыть</span>
+
+      </button>
+      <form class="modal-content" action="https://echo.html.academy.ru/" method="post">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+
+        <div class="field-group">
+          <div class="field-group-item">
+            <label class="form-label" for="appointment-date">Дата заезда:
+            </label>
+            <div class="field-group-text text-input">
+              <input class="field" type="text" id="appointment-date" name="appointment-date"
+                placeholder="27 апреля 2020">
+
+
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </div>
+
+
+            <p class="data-text">Мы не можем отправить вас в прошлое.</p>
+          </div>
+
+
+          <div class="field-group-item">
+            <label class="form-label" for="appointment-date-two">Дата выезда:</label>
+
+            <div class="field-group-text text-input">
+              <input class="field" type="text" id="appointment-date-two" name="appointment-date"
+                placeholder="1 сентября 2021">
+
+
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </div>
+            <p class="data-text-two">На эти даты есть свободные номера. Пока есть.</p>
+
+          </div>
+
+
+          <div class="field-group-item-person">
+
+            <div class="field-group-item-adult">
+              <label class="form-label-adult" for="adult">Взрослые:</label>
+
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+
+                <input class="field-number" type="field-number" id="adult" name="adult" type="number" value="2">
+
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+            </div>
+
+
+            <div class="field-group-item-children">
+              <label class="form-label-children" for="children">Дети:</label>
+              <button class="tooltip">
+                <span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей,<br> которые
+                  будут с вами,
+                  возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                </span>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+
+                <input class="field-number" type="field-number" id="children" name="children" type="number" value="1"
+                  aria-describedby="tooltip-children">
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+
+
+
+            </div>
+          </div>
+
+
+          <button class="button-appointment-find" type="submit">Найти</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+
 </body>
 
 </html>
