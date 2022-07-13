@@ -535,7 +535,7 @@ body {
 .subscribe-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1097,7 +1097,7 @@ body {
 }
 
 
-.sorting-container-button {
+.sorting-container-curd {
   display: flex;
   margin-left: 74px;
 
@@ -1625,7 +1625,7 @@ body {
   align-items: center;
   padding: 0px;
   gap: 270px;
-  padding: 60px 70px 10px 65px;
+  padding: 55px 70px 15px 75px;
 
 
 }
@@ -1805,8 +1805,8 @@ body {
 }
 
 .footer-social {
-
-  margin-right: 240px;
+  min-width: 200px;
+  margin-right: 225px;
 
 }
 
