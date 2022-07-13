@@ -595,18 +595,6 @@ body {
   padding: 60px 20px;
 }
 
-padding: 50px 0 70px 0;
-}
-
-.footer-phone-cotacts {
-
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  margin-left: auto;
-}
 
 .inner-header {
   padding: 35px 70px 70px 70px;
@@ -1698,7 +1686,7 @@ padding: 50px 0 70px 0;
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 6px;
 
 }
 
@@ -1905,6 +1893,12 @@ padding: 50px 0 70px 0;
 }
 
 .footer-phone-cotacts {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: auto;
   font-family: "ptsans", sans-serif;
   text-decoration: none;
 
