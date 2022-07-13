@@ -97,7 +97,7 @@ body {
 .logo-navigation-index {
   width: 139px;
   margin-left: 70px;
-  margin-right: 53px;
+  margin-right: 48px;
 
 }
 
@@ -419,7 +419,7 @@ body {
 
 .rating {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 
 }
 
@@ -1102,7 +1102,7 @@ padding: 50px 0 70px 0;
 }
 
 .sorting-container {
-  padding: 60px 70px 35px 70px;
+  padding: 60px 70px;
 
   display: flex;
   align-items: center;
@@ -1262,7 +1262,7 @@ padding: 50px 0 70px 0;
 
 .hotel-card-link {
 
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -1290,7 +1290,7 @@ padding: 50px 0 70px 0;
   flex-direction: column;
   flex-wrap: wrap;
   flex-basis: 100%;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0;
 
   color: #000000;
@@ -1558,7 +1558,6 @@ padding: 50px 0 70px 0;
 .card-button-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
   width: 300px;
 }
 
@@ -1639,7 +1638,7 @@ padding: 50px 0 70px 0;
   align-items: center;
   padding: 0px;
   gap: 270px;
-  padding: 80px 70px 10px 65px;
+  padding: 60px 70px 10px 65px;
 
 
 }
@@ -1807,12 +1806,6 @@ padding: 50px 0 70px 0;
   flex: none;
 
 }
-
-
-.select-control-quantity:hover,
-.select-control-quantity:focus {}
-
-.select-control-quantity:focus {}
 
 
 
@@ -2131,9 +2124,6 @@ padding: 50px 0 70px 0;
 }
 
 
-
-
-
 .field-button::before {
   width: 20px;
   height: 20px;
@@ -2331,8 +2321,6 @@ padding: 50px 0 70px 0;
   display: none;
 
 }
-
-.modal {}
 
 .modal-auth {
   width: 715px;
