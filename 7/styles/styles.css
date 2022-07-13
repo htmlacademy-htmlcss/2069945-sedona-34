@@ -28,8 +28,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
-
 }
 
 
@@ -124,6 +122,7 @@ body {
 .navigation-link:focus {
   box-shadow: inset 0 0 0 2px #756157;
   outline: none;
+  opacity: 0.8;
 
 }
 
@@ -131,8 +130,8 @@ body {
 .counte-badge {
 
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   left: 10px;
   top: -5px;
   border-radius: 50px;
@@ -535,7 +534,7 @@ body {
 .subscribe-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -653,7 +652,7 @@ body {
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
-
+  margin-right: 45px;
 
 }
 
@@ -903,7 +902,7 @@ body {
 
 .range-toggle:focus {
   background: #FFFFFF;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 
@@ -1097,7 +1096,7 @@ body {
 }
 
 
-.sorting-container-button {
+.sorting-container-curd {
   display: flex;
   margin-left: 74px;
 
@@ -1298,7 +1297,7 @@ body {
   text-decoration: none;
   margin: 0;
   padding: 0;
-
+  display: inline-block;
 
 }
 
@@ -1309,7 +1308,6 @@ body {
   text-decoration: none;
   margin: 0;
   padding: 0;
-
 
 }
 
@@ -1512,7 +1510,7 @@ body {
 
   width: 100px;
   height: 32px;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -1625,7 +1623,7 @@ body {
   align-items: center;
   padding: 0px;
   gap: 270px;
-  padding: 60px 70px 10px 65px;
+  padding: 55px 70px 15px 75px;
 
 
 }
@@ -1805,8 +1803,8 @@ body {
 }
 
 .footer-social {
-
-  margin-right: 240px;
+  min-width: 200px;
+  margin-right: 225px;
 
 }
 
