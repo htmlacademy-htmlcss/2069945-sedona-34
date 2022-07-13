@@ -283,7 +283,6 @@ body {
   position: relative;
 }
 
-.hero-welcome {}
 
 .hero-divider {
   position: absolute;
@@ -595,18 +594,6 @@ body {
   padding: 60px 20px;
 }
 
-padding: 50px 0 70px 0;
-}
-
-.footer-phone-cotacts {
-
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  margin-left: auto;
-}
 
 .inner-header {
   padding: 35px 70px 70px 70px;
@@ -1698,7 +1685,7 @@ padding: 50px 0 70px 0;
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 6px;
 
 }
 
@@ -1889,8 +1876,9 @@ padding: 50px 0 70px 0;
 
 }
 
+/*
 .footer-phone {
-  max-width: 350px;
+
 
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -1903,11 +1891,21 @@ padding: 50px 0 70px 0;
 
 
 }
+*/
+
 
 .footer-phone-cotacts {
-  font-family: "ptsans", sans-serif;
-  text-decoration: none;
 
+  font-family: "ptsans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: auto;
+
+  text-decoration: none;
+  max-width: 350px;
 }
 
 .footer-phone-cotacts:hover {
@@ -2026,14 +2024,16 @@ padding: 50px 0 70px 0;
 .field-group-item {
   display: grid;
   grid-template-columns: 150px 420px;
-  gap: 0px 42px;
+  gap: 0px 5px;
   align-items: center;
   justify-content: start;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
 .field-group-text {
   grid-column: 2;
-  padding: 15px 19px;
+  padding: 13px 15px;
   position: relative;
 
 }
@@ -2053,6 +2053,7 @@ padding: 50px 0 70px 0;
   align-items: center;
   width: 350px;
   min-height: 50px;
+  margin-left: 10px;
 }
 
 
@@ -2114,13 +2115,12 @@ padding: 50px 0 70px 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
   align-items: center;
   text-align: center;
   border: none;
   background-color: transparent;
   width: 40px;
-  height: 30px;
+  height: 40px;
 }
 
 
@@ -2141,10 +2141,10 @@ padding: 50px 0 70px 0;
   justify-self: start;
   align-items: center;
 
-  font-family: 'PT Sans' sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
 
@@ -2153,11 +2153,11 @@ padding: 50px 0 70px 0;
 
 
 .form-label-adult {
-  margin-right: 85px;
+  margin-right: 60px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
@@ -2168,7 +2168,7 @@ padding: 50px 0 70px 0;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
@@ -2244,6 +2244,7 @@ padding: 50px 0 70px 0;
   align-items: flex-end;
   color: #FF5757;
   width: 420px;
+  margin-top: 5px;
 }
 
 
@@ -2251,13 +2252,13 @@ padding: 50px 0 70px 0;
   grid-column: 2;
   justify-self: start;
 
-  font-family: 'PT Sans' sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: flex;
-
+  margin-top: 5px;
   color: #333333;
 
 }
@@ -2312,8 +2313,8 @@ padding: 50px 0 70px 0;
   position: fixed;
 
   display: flex;
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -2324,14 +2325,19 @@ padding: 50px 0 70px 0;
 
 .modal-auth {
   width: 715px;
-  height: 561px;
+  height: 516px;
   position: absolute;
-  left: 300px;
-  top: 100px;
-  padding: 62px 40px;
+  box-sizing: border-box;
+  padding: 40px 70px 40px 70px;
   background: #FFFFFF;
 
   border-radius: 30px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
 
 }
 
@@ -2340,13 +2346,13 @@ padding: 50px 0 70px 0;
 .modal-close-button {
 
   position: absolute;
-  padding: 25px;
+  padding: 15px;
 
-  right: 140px;
-  top: 80px;
+  right: 70px;
+  top: 55px;
 
-  width: 20px;
-  height: 20px;
+  width: 53px;
+  height: 53px;
 
   border: none;
   background-image: url("../images/close.svg");
@@ -2362,7 +2368,7 @@ padding: 50px 0 70px 0;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 36px;
   margin-bottom: 63px;
 
@@ -2401,13 +2407,14 @@ padding: 50px 0 70px 0;
 
 .tooltip-text {
   display: block;
+  box-sizing: border-box;
   position: absolute;
-  top: 50px;
-  left: -150px;
-  font-family: 'PT Sans' sans-serif;
+  top: 45px;
+  left: -110px;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   color: #ffffff;
 
@@ -2417,8 +2424,8 @@ padding: 50px 0 70px 0;
   border-radius: 10px;
   padding: 20px;
 
-  width: 256px;
-  min-height: 143px;
+  width: 250px;
+  min-height: 140px;
 
 
 }
@@ -2427,9 +2434,10 @@ padding: 50px 0 70px 0;
 
   content: "";
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   background: url("../images/i-tooltip.svg");
   background-repeat: no-repeat;
   background-position: center;
+
 }
