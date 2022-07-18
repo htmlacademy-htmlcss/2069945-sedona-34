@@ -408,6 +408,7 @@ body {
 
 .advantages-item-picture {
   width: 800px;
+  display: flex;
 
 }
 
@@ -973,34 +974,41 @@ body {
 
 }
 
-.control-input:disabled+.control-housing {
+.control-input[type="radio"]:disabled+.control-housing {
   background: #FFFFFF;
   border: none;
 }
 
 
 
-.control-input .control-housing {
+.control-input[type="radio"]:focus+.control-housing {
   background: #FFFFFF;
   outline: 3px solid #83B3D3;
 
 }
 
-.control-input:disabled+.control-infra {
+.control-input[type="radio"]:hover+.control-housing {
+  background: #FFFFFF;
+
+
+}
+
+.control-input[type="checkbox"]:disabled+.control-infra {
 
   background: #FFFFFF;
   border-radius: 4px;
   border: none;
 }
 
-.control-input .control-infra {
+
+.control-input[type="checkbox"]:hover+.control-infra {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: none;
 
 }
 
-.control-input:focus+ .control-infra {
+.control-input[type="checkbox"]:focus+.control-infra {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 4px;
@@ -1506,6 +1514,8 @@ body {
 
 .button-reset {
   min-width: 160px;
+
+  height: 32px;
   background: none;
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
@@ -1517,8 +1527,9 @@ body {
   padding: 0;
   margin-top: 20px;
   cursor: pointer;
-
+  border-radius: 4px;
   border: none;
+  outline: 3px solid transparent;
 }
 
 
@@ -1534,11 +1545,8 @@ body {
 }
 
 .button-reset:focus {
-
-  width: 100px;
-  height: 32px;
   outline: 3px solid #83B3D3;
-  border-radius: 4px;
+
 }
 
 .button-reset:active {
@@ -1632,10 +1640,8 @@ body {
   outline: 1px solid #E6E6E6;
 
   width: 1055px;
-  Top: 1120px;
+  bottom: 0;
   left: 70px;
-
-
   display: flex;
 
 }
@@ -1928,16 +1934,17 @@ body {
 
 }
 
+.footer-social-link:disabled {
+  fill: #83B3D3;
+}
+
 .footer-social-link:hover {
-  color: #68A2CA;
+  opacity: 0.6;
+
 }
 
-.footer-social-link:focus {
-  color: #68A2CA;
-}
 
-.footer-social-link:active {
-
+.footer-social-link:active svg {
   color: rgba(104, 162, 202, 0.3);
 }
 
@@ -1968,21 +1975,6 @@ body {
 }
 
 
-.button-social:hover {
-  opacity: 0.6;
-
-}
-
-
-.button-social:focus {
-  opacity: 0.9;
-
-}
-
-.button-social:active {
-  fill-rule: rgba(104, 162, 202, 0.3);
-
-}
 
 
 
@@ -2025,12 +2017,27 @@ body {
   box-sizing: border-box;
 }
 
-.footer-logo:hover {
-  opacity: 0.3;
+.footer-logo:hover svg {
+  fill: #756157;
+
+}
+
+.footer-logo-developer:focus svg {
+  fill: #756157;
+
 
 }
 
 .footer-logo:focus {
+  box-sizing: border-box;
+  outline: 1px solid #756157;
+
+
+}
+
+
+
+.footer-logo-developer:focus svg {
   box-sizing: border-box;
   outline: 1px solid #756157;
 
@@ -2093,46 +2100,8 @@ body {
   border: none;
   background-color: #F2F2F2;
 
-
 }
 
-.field:disabled {
-  background: #F2F2F2;
-  border-radius: 4px;
-
-}
-
-
-.field:hover {
-  background: #E6E6E6;
-  border-radius: 4px;
-
-}
-
-.field:focus {
-  background: #E6E6E6;
-
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.field:active {
-  background: #FFFFFF;
-
-  border: 2px solid #000000;
-  border-radius: 4px;
-
-}
-
-.field:invalid {
-  background: #F2F2F2;
-  border-radius: 4px;
-}
-
-.field::placeholder {
-  color: #000000;
-  opacity: 0, 6;
-}
 
 
 .field-group {
@@ -2156,11 +2125,52 @@ body {
 }
 
 .field-group-text {
+  display: flex;
   grid-column: 2;
-  padding: 13px 15px;
   position: relative;
+  width: 420px;
+  height: 50px;
+  align-self: center;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  outline: 3px solid transparent;
+}
+
+
+.field-group-text:hover {
+  background-color: #E6E6E6;
+  border: none;
+}
+
+
+.field-group-text:focus {
+  background: #E6E6E6;
+
+  outline-color:  #83B3D3;
+
 
 }
+
+.field-group-text:focus-visible {
+  background-color: #E6E6E6;
+
+}
+
+
+
+.field-group {
+
+  margin: 0;
+  margin-bottom: 11px;
+
+  border: none;
+
+}
+
+
 
 .field-group-item-adult {
   display: flex;
@@ -2252,11 +2262,12 @@ body {
   width: 20px;
   height: 20px;
   background: var(--icon) no-repeat center / contain;
+  outline: 3px solid transparent;
 }
 
 .field-button:focus {
   opacity: 1;
-  outline: 3px solid #83B3D3;
+  outline-color: #83B3D3;
 
 }
 
@@ -2311,13 +2322,11 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
+  outline: 3px solid transparent;
   color: #000000;
-
   align-self: center;
   background: #F2F2F2;
   border-radius: 4px;
-
 
 }
 
@@ -2325,35 +2334,15 @@ body {
   font: inherit;
   color: inherit;
   opacity: 1;
-
+  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-}
 
+  background: #E6E6E6;
 
-
-.text-input:hover {
-  background-color: #E6E6E6;
-}
-
-
-.text-input:focus {
-  border: #E6E6E6;
-  outline: 3px solid #83B3D3;
 
 }
-
-.text-input:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
-
-.text-input:active {
-  background-color: #ffffff;
-  font-weight: 400;
-}
-
 
 
 .data-text {
@@ -2369,13 +2358,14 @@ body {
   color: #FF5757;
   width: 420px;
   margin-top: 5px;
+  border: none;
 }
 
 
 .data-text-two {
   grid-column: 2;
   justify-self: start;
-
+  border: none;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2406,7 +2396,9 @@ body {
   border-radius: 10px;
   margin-top: 40px;
   border: none;
+  outline: 3px solid transparent;
 }
+
 
 .button-appointment-find:disabled {
   color: #000000;
@@ -2416,13 +2408,13 @@ body {
 
 .button-appointment-find:hover {
   background: #68A2CA;
-  border-radius: 10px;
+
 }
 
 .button-appointment-find:focus {
   background: #68A2CA;
-  border: 3px solid #756257;
-  border-radius: 10px;
+  outline-color: #756257;
+
 }
 
 .button-appointment-find:active {
@@ -2552,12 +2544,6 @@ body {
 }
 
 
-
-
-
-
-
-
 .tooltip-text {
   display: block;
   box-sizing: border-box;
@@ -2583,23 +2569,11 @@ body {
 
 }
 
-/*
-.tooltip::before {
-
-  content: "";
-  position: absolute;
-  display: block;
-
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
 
 .icon {
   display: block;
-  background: url("../images/i-favicon.svg");
+  background: url("../images/favicon.iso");
   background-repeat: no-repeat;
   background-position: center;
 
 }
-*/
