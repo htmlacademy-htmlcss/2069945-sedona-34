@@ -973,34 +973,51 @@ body {
 
 }
 
-.control-input:disabled+.control-housing {
+.control-input[type="radio"]:disabled+.control-housing {
   background: #FFFFFF;
   border: none;
 }
 
 
 
-.control-input .control-housing {
+.control-input[type="radio"]:focus+.control-housing {
   background: #FFFFFF;
   outline: 3px solid #83B3D3;
 
 }
 
-.control-input:disabled+.control-infra {
+.control-input[type="radio"]:hover+.control-housing {
+  background: #FFFFFF;
+
+
+}
+
+.control-input[type="checkbox"]:disabled+.control-infra {
 
   background: #FFFFFF;
   border-radius: 4px;
   border: none;
 }
 
-.control-input .control-infra {
+.control-input:focus+.control-infra {
+
+  background: rgba(255, 255, 255, 0.6);
+  outline-color: 3px solid #83B3D3;
+  border-radius: 4px;
+
+}
+
+
+
+
+.control-input:hover+.control-infra {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: none;
 
 }
 
-.control-input:focus+ .control-infra {
+.control-input[type="checkbox"]:focus+.control-infra {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 4px;
