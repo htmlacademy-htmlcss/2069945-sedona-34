@@ -408,7 +408,7 @@ body {
 
 .advantages-item-picture {
   width: 800px;
-display: flex;
+  display: flex;
 
 }
 
@@ -1934,16 +1934,17 @@ display: flex;
 
 }
 
+.footer-social-link:disabled {
+  fill: #83B3D3;
+}
+
 .footer-social-link:hover {
-  color: #68A2CA;
+  opacity: 0.6;
+
 }
 
-.footer-social-link:focus {
-  color: #68A2CA;
-}
 
-.footer-social-link:active {
-
+.footer-social-link:active svg {
   color: rgba(104, 162, 202, 0.3);
 }
 
@@ -1974,21 +1975,6 @@ display: flex;
 }
 
 
-.button-social:hover {
-  opacity: 0.6;
-
-}
-
-
-.button-social:focus {
-  opacity: 0.9;
-
-}
-
-.button-social:active {
-  fill-rule: rgba(104, 162, 202, 0.3);
-
-}
 
 
 
@@ -2031,12 +2017,27 @@ display: flex;
   box-sizing: border-box;
 }
 
-.footer-logo:hover {
-  opacity: 0.3;
+.footer-logo:hover svg {
+  fill: #756157;
+
+}
+
+.footer-logo-developer:focus svg {
+  fill: #756157;
+
 
 }
 
 .footer-logo:focus {
+  box-sizing: border-box;
+  outline: 1px solid #756157;
+
+
+}
+
+
+
+.footer-logo-developer:focus svg {
   box-sizing: border-box;
   outline: 1px solid #756157;
 
@@ -2099,46 +2100,8 @@ display: flex;
   border: none;
   background-color: #F2F2F2;
 
-
 }
 
-.field:disabled {
-  background: #F2F2F2;
-  border-radius: 4px;
-
-}
-
-
-.field:hover {
-  background: #E6E6E6;
-  border-radius: 4px;
-
-}
-
-.field:focus {
-  background: #E6E6E6;
-
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-}
-
-.field:active {
-  background: #FFFFFF;
-
-  border: 2px solid #000000;
-  border-radius: 4px;
-
-}
-
-.field:invalid {
-  background: #F2F2F2;
-  border-radius: 4px;
-}
-
-.field::placeholder {
-  color: #000000;
-  opacity: 0, 6;
-}
 
 
 .field-group {
@@ -2162,11 +2125,52 @@ display: flex;
 }
 
 .field-group-text {
+  display: flex;
   grid-column: 2;
-  padding: 13px 15px;
   position: relative;
+  width: 420px;
+  height: 50px;
+  align-self: center;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  outline: 3px solid transparent;
+}
+
+
+.field-group-text:hover {
+  background-color: #E6E6E6;
+  border: none;
+}
+
+
+.field-group-text:focus {
+  background: #E6E6E6;
+
+  outline-color:  #83B3D3;
+
 
 }
+
+.field-group-text:focus-visible {
+  background-color: #E6E6E6;
+
+}
+
+
+
+.field-group {
+
+  margin: 0;
+  margin-bottom: 11px;
+
+  border: none;
+
+}
+
+
 
 .field-group-item-adult {
   display: flex;
@@ -2258,11 +2262,12 @@ display: flex;
   width: 20px;
   height: 20px;
   background: var(--icon) no-repeat center / contain;
+  outline: 3px solid transparent;
 }
 
 .field-button:focus {
   opacity: 1;
-  outline: 3px solid #83B3D3;
+  outline-color: #83B3D3;
 
 }
 
@@ -2317,13 +2322,11 @@ display: flex;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
+  outline: 3px solid transparent;
   color: #000000;
-
   align-self: center;
   background: #F2F2F2;
   border-radius: 4px;
-
 
 }
 
@@ -2331,35 +2334,15 @@ display: flex;
   font: inherit;
   color: inherit;
   opacity: 1;
-
+  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-}
 
+  background: #E6E6E6;
 
-
-.text-input:hover {
-  background-color: #E6E6E6;
-}
-
-
-.text-input:focus {
-  border: #E6E6E6;
-  outline: 3px solid #83B3D3;
 
 }
-
-.text-input:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
-
-.text-input:active {
-  background-color: #ffffff;
-  font-weight: 400;
-}
-
 
 
 .data-text {
@@ -2375,13 +2358,14 @@ display: flex;
   color: #FF5757;
   width: 420px;
   margin-top: 5px;
+  border: none;
 }
 
 
 .data-text-two {
   grid-column: 2;
   justify-self: start;
-
+  border: none;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2412,7 +2396,9 @@ display: flex;
   border-radius: 10px;
   margin-top: 40px;
   border: none;
+  outline: 3px solid transparent;
 }
+
 
 .button-appointment-find:disabled {
   color: #000000;
@@ -2422,13 +2408,13 @@ display: flex;
 
 .button-appointment-find:hover {
   background: #68A2CA;
-  border-radius: 10px;
+
 }
 
 .button-appointment-find:focus {
   background: #68A2CA;
-  border: 3px solid #756257;
-  border-radius: 10px;
+  outline-color: #756257;
+
 }
 
 .button-appointment-find:active {
@@ -2586,7 +2572,7 @@ display: flex;
 
 .icon {
   display: block;
-  background: url("../images/i-favicon.svg");
+  background: url("../images/favicon.iso");
   background-repeat: no-repeat;
   background-position: center;
 
