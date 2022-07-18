@@ -340,12 +340,8 @@ body {
 
 .advantages-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: 100%;
-  flex-shrink: ;
-  width: 400px;
-  height: 384px;
+
   margin: 0;
 
   font-family: "ptsans", sans-serif;
@@ -372,7 +368,7 @@ body {
   width: 400px;
   min-height: 384px;
   background-color: #FFFFFF;
-  flex-basis: 100%;
+
 }
 
 .advantages-description {
@@ -982,20 +978,15 @@ body {
   border: none;
 }
 
-.control:hover+.control-housing {
+
+
+.control-input .control-housing {
   background: #FFFFFF;
-  border: none;
+  outline: 3px solid #83B3D3;
 
 }
 
-.control .control-housing {
-  background: #FFFFFF;
-  border: 3px solid #83B3D3;
-
-
-}
-
-.control:disabled+ .control-infra {
+.control-input:disabled+.control-infra {
 
   background: #FFFFFF;
   border-radius: 4px;
@@ -1009,13 +1000,9 @@ body {
 
 }
 
-
-
-
-
-.control:focus+ .control-infra {
+.control-input:focus+ .control-infra {
   background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 
 }
@@ -1048,8 +1035,6 @@ body {
 
 }
 
-
-
 .control-input[type="radio"]+.control-housing {
   border-radius: 50%;
 }
@@ -1064,13 +1049,9 @@ body {
   height: 18px;
   background-repeat: no-repeat;
   fill: #3F5E72;
-  ;
+
   content: "";
 }
-
-
-
-
 
 .control-input[type="radio"]:checked+.control-housing::before {
   position: absolute;
@@ -1866,9 +1847,7 @@ body {
   border-color: #3F5E72;
   border-radius: 4px;
 
-
 }
-
 
 .select-control-quantity:invalid {
 
