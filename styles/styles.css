@@ -969,36 +969,51 @@ body {
   position: relative;
   display: block;
   padding-left: 40px;
+  border: none;
 }
 
-.control:hover .control-housing {
+.control-input {
   background: #FFFFFF;
-
-
-}
-
-.control:focus .control-housing {
-  background: #FFFFFF;
-  border: 3px solid #83B3D3;
 
 }
 
 .control-input:disabled+.control-housing {
-  opacity: 0.2;
+  background: #FFFFFF;
   border: none;
 }
 
-.control:hover .control-infra {
+.control:hover+.control-housing {
+  background: #FFFFFF;
+  border: none;
+
+}
+
+.control .control-housing {
+  background: #FFFFFF;
+  border: 3px solid #83B3D3;
+
+
+}
+
+.control:disabled+ .control-infra {
+
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+}
+
+.control-input .control-infra {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+  border: none;
+
 }
 
-.control-input:disabled+.control-infra {
-  opacity: 0.2;
-  border-radius: 4px;
-}
 
-.control:focus .control-infra {
+
+
+
+.control:focus+ .control-infra {
   background: rgba(255, 255, 255, 0.6);
   border: 3px solid #83B3D3;
   border-radius: 4px;
@@ -1015,6 +1030,7 @@ body {
   background: #FFFFFF;
   Width: 20px;
   Height: 20px;
+  border: none;
 }
 
 .control-infra {
@@ -1028,7 +1044,7 @@ body {
   bottom: 0%;
   background: #FFFFFF;
   border-radius: 4px;
-
+  border: none;
 
 }
 
@@ -1040,14 +1056,15 @@ body {
 
 .control-input[type="checkbox"]:checked+.control-infra::before {
   position: absolute;
-  left: 2px;
-  top: 3px;
+  left: 5px;
+  top: 5px;
   border-radius: 4px;
   background-image: url("../images/chek.svg");
-  width: 13px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   background-repeat: no-repeat;
-
+  fill: #3F5E72;
+  ;
   content: "";
 }
 
