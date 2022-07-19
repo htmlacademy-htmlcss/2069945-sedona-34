@@ -591,11 +591,16 @@ body {
 
 .field-subscribe-one {
   display: flex;
-  margin-left: 180px;
+  margin-left: 160px;
 
 }
 
+.field-subscribe-index {
+  display: flex;
+  margin-left: 180px;
 
+
+}
 
 .subscribe-catalog {
   padding: 110px 40px;
@@ -1884,7 +1889,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   flex-grow: 1;
-  padding: 0 70px 0 10px;
+  padding: 0 70px 0 0;
 
 }
 
